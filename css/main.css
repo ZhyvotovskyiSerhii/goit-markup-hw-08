@@ -1142,11 +1142,11 @@ body {
   }
   .footer-adress-container {
     margin-right: 70px;
-    align-items: flex-start;
+    align-items: baseline;
     margin-bottom: 0;
   }
   .adress-menu {
-    align-items: flex-start;
+    align-items: baseline;
   }
   .footer-social-container {
     margin-right: 93px;
@@ -1159,14 +1159,28 @@ body {
     width: 358px;
   }
   .footer-form-container {
-    align-items: flex-start;
+    align-items: baseline;
   }
   .form-button-container {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: baseline;
   }
   .email-form {
     margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
